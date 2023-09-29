@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;700&family=Work+Sans:wght@400;500;700&display=swap");
+
+.popup_container {
+  width: 15.8rem;
+  height: 23.9rem;
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+}
+
+.popup_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popup_top div:nth-child(1) {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.popup_top div:nth-child(1) h1 {
+  font-family: "Sora", sans-serif;
+  font-size: 1rem;
+  color: #120b48;
+}
+
+.popup_top div:nth-child(2) {
+  display: flex;
+  gap: 0.4rem;
+}
+.popup_container p {
+  font-family: "Work Sans", sans-serif;
+  color: #413c6d;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.fullscreen_and_currenttab {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.fullscreen_and_currenttab {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.fullscreen_and_currenttab img {
+  width: 50%;
+  margin-bottom: 0.4rem;
+}
+.fullscreen_and_currenttab div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fullscreen_and_currenttab div:nth-child(1) span {
+  font-family: "Work Sans", sans-serif;
+  color: #928fab;
+  font-family: Work Sans;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.fullscreen_and_currenttab div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fullscreen_and_currenttab div:nth-child(2) span {
+  font-family: "Work Sans", sans-serif;
+  color: #928fab;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.toggle-switch-container {
+  display: inline-block;
+  position: relative;
+  align-items: center;
+}
+
+input.hidden {
+  display: none;
+}
+
+.toggle-switch-label {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background-color: #120b48;
+  border: 2px solid #120b48;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.toggle-switch-inner {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transform: translateX(0); /* Initial state */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Styles for the first toggle switch */
+#toggle-switch-1:checked + .toggle-switch-label .toggle-switch-inner {
+  transform: translateX(100%); /* Translated when the checkbox is checked */
+}
+
+/* Additional styles for the first toggle switch */
+#toggle-switch-1:checked + .toggle-switch-label {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+/* Styles for the second toggle switch */
+#toggle-switch-2:checked + .toggle-switch-label .toggle-switch-inner {
+  transform: translateX(100%); /* Translated when the checkbox is checked */
+}
+
+/* Additional styles for the second toggle switch */
+#toggle-switch-2:checked + .toggle-switch-label {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.camera_and_audio {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.camera_and_audio > div:nth-child(1),
+.camera_and_audio > div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: var(--Inner-Radius, 0.75rem);
+  border: 1px solid var(--primary-primary-600, #100a42);
+  padding: 0.75rem 1rem;
+}
+.camera_and_audio div:nth-child(1) div:first-child,
+.camera_and_audio div:nth-child(2) div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.camera_and_audio div:nth-child(1) div:first-child span,
+.camera_and_audio div:nth-child(2) div:first-child span {
+  color: #100a42;
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.start_btn {
+  background-color: #120b48;
+  width: 100%;
+  padding: 1rem;
+  color: #fff;
+  color: #fafdff;
+  font-family: "Work Sans", sans-serif;
+  margin: 1.5rem 0 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 0.75rem;
+  cursor: pointer;
+}
