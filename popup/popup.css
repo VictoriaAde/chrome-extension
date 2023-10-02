@@ -107,13 +107,13 @@ input.hidden {
   border-radius: 50%;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transform: translateX(0); /* Initial state */
+  transform: translateX(100%); /* Initial state */
   transition: transform 0.3s ease-in-out;
 }
 
 /* Styles for the first toggle switch */
 #toggle-switch-1:checked + .toggle-switch-label .toggle-switch-inner {
-  transform: translateX(100%); /* Translated when the checkbox is checked */
+  transform: translateX(0); /* Translated when the checkbox is checked */
 }
 
 /* Additional styles for the first toggle switch */
@@ -124,7 +124,7 @@ input.hidden {
 
 /* Styles for the second toggle switch */
 #toggle-switch-2:checked + .toggle-switch-label .toggle-switch-inner {
-  transform: translateX(100%); /* Translated when the checkbox is checked */
+  transform: translateX(0); /* Translated when the checkbox is checked */
 }
 
 /* Additional styles for the second toggle switch */
