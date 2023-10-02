@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;700&family=Work+Sans:wght@400;500;700&display=swap");
 
 body {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.737);
 }
 .notification {
   width: 25rem;
@@ -11,7 +11,7 @@ body {
   border: 2px solid #e8e8e8;
   background: #fff;
   z-index: 10;
-  margin-left: 1rem;
+  margin-left: 7rem;
 }
 .notification > div:nth-child(1) {
   display: flex;
